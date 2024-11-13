@@ -1,5 +1,6 @@
-## Hi there 👋
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=RamPrakhyath05&show_icons=true&theme=transparent)](https://github.com/RamPrakhyath05/github-readme-stats)
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=RamPrakhyath05&layout=donut&theme=transparent)](https://github.com/RamPrakhyath05/github-readme-stats)
 <!--
 **RamPrakhyath05/RamPrakhyath05** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
