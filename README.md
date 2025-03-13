@@ -1,10 +1,7 @@
-Hi, my name is Ram Prakhyath!
-======================================================================================================================================
-A Computer Science Student at PES University, Bangalore
-------------------------------------
-* I use arch BTW (EndeavourOS)
+# Hi, my name is Ram Prakhyath!
+### A Computer Science Student at PES University, Bangalore
 
-### Skills
+#### Skills
 
 <p align="left">
     <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer"><img src="./icons/c-original.svg" width="36" height="36" alt="C" /></a>
@@ -21,7 +18,7 @@ A Computer Science Student at PES University, Bangalore
     <a href="https://www.endeavouros.com" target="_blank" rel="noreferrer"><img src="./icons/endeavouros.svg" width="36" height="36" alt="EndeavourOS" /></a>
 </p>
 
-### Badges
+#### Badges
 
 <b>My GitHub Stats</b>
 
