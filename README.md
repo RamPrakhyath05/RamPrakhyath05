@@ -37,8 +37,6 @@ A Computer Science Student at PES University, Bangalore
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=RamPrakhyath05&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" />
 </a>
 
-[![github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=RamPrakhyath05)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
 <a href="https://github.com/RamPrakhyath05" align="left">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=littleblack111&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" />
 </a>
