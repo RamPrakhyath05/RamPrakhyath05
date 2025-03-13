@@ -4,8 +4,7 @@ A Computer Science Student at PES University, Bangalore
 ------------------------------------
 * I use arch BTW (EndeavourOS)
 
-<a href="https://www.github.com/littleblack111" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/followers/littleblack111?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
-<a href="https://www.x.com/littleblac59922" target="_blank" rel="noreferrer"><img src="https://img.shields.io/twitter/follow/littleblac59922?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
+<a href="https://www.github.com/RamPrakhyath05" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/followers/littleblack111?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
 
 ### Skills
 
