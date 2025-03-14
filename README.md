@@ -1,5 +1,4 @@
 # Hi, my name is Ram Prakhyath!
-### A Computer Science Student at PES University, Bangalore
 
 #### Skills
 
