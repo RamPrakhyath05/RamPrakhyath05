@@ -5,6 +5,7 @@
     <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="./icons/python-original.svg" width="36" height="36" alt="Python" /></a>
     <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="./icons/git-original.svg" width="36" height="36" alt="Git" /></a>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="./icons/javascript-original.svg" width="36" height="36" alt="JavaScript" /></a>
+    <a href="https://www.endeavouros.com" target="_blank" rel="noreferrer"><img src="./icons/typescript-original.svg" width="36" height="36" alt="Typescript" /></a>
     <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="./icons/html5-original.svg" width="36" height="36" alt="HTML5" /></a>
     <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="./icons/react-original.svg" width="36" height="36" alt="React" /></a>
     <a href="https://jquery.com/" target="_blank" rel="noreferrer"><img src="./icons/jquery-original.svg" width="36" height="36" alt="JQuery" /></a>
