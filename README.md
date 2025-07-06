@@ -34,10 +34,6 @@
     <img src="https://github-readme-stats.vercel.app/api?username=RamPrakhyath05&show_icons=true&hide=&count_private=true&title_color=ff0000&text_color=ffffff&icon_color=ff0000&bg_color=0d1117&hide_border=true&show_icons=true" alt="Ram Prakhyath's GitHub Stats" />
 </p>
 
-<p align="center">
-    <img src="./icons/code.gif" width="250" alt="Ram Pixel GIF" />
-</p>
-
 ---
 
 ### 🚀 Let's Connect
