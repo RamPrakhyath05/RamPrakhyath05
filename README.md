@@ -39,7 +39,7 @@
 ### 🚀 Let's Connect
 
 <p align="left">
-    <a href="https://www.linkedin.com/in/ramprakhyath/" target="_blank">
+    <a href="https://www.linkedin.com/in/ram-prakhyath-annamreddy/" target="_blank">
         <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
     <a href="mailto:ram.annamreddy25@gmail.com" target="_blank">
