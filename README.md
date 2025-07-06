@@ -42,7 +42,7 @@
     <a href="https://www.linkedin.com/in/ramprakhyath/" target="_blank">
         <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
-    <a href="mailto:ramprakhyath@gmail.com" target="_blank">
+    <a href="mailto:ram.annamreddy25@gmail.com" target="_blank">
         <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
     </a>
     <a href="https://instagram.com/ramprakhyath" target="_blank">
