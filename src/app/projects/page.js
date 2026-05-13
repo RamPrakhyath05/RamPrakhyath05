@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Link from "next/link";
 import { ArrowLeft, Github, ExternalLink, Code2 } from "lucide-react";
@@ -7,33 +7,34 @@ import Card from "../../components/Card.js";
 export default function Home() {
   const projects = [
     {
+      name: "Fortress",
+      desc: "A Financial Data Processing and Access Control backend application.",
+      gitHublink: "https://github.com/RamPrakhyath05/fortress",
+      deploymentlink: "https://github.com/RamPrakhyath05/fortress",
+      tags: ["Java", "Spring Boot", "Maven", "SQLite"],
+    },
+    {
       name: "Enhanced KG based LLM-RAG system",
       desc: "A more accurate and grounded content generator which uses an LLM with a Knowledge Graph as its knowledge base to reduce hallucinations and improve factual retrieval.",
       gitHublink: "https://github.com/RamPrakhyath05/enhanced-kg-llm",
       deploymentlink: "https://github.com/RamPrakhyath05/enhanced-kg-llm",
-      tags: ["LLM", "RAG", "Knowledge Graph", "Python"]
+      tags: ["LLM", "RAG", "Knowledge Graph", "Python"],
     },
     {
-      name: "Nova: Multitasking Voice Assistant",
-      desc: "A voice-activated desktop assistant for Linux supporting real-time speech recognition and system automation. Uses Vosk for STT and Llama 3 for local reasoning.",
-      gitHublink: "https://github.com/RamPrakhyath05/multitasking-assistant",
-      deploymentlink: "https://github.com/RamPrakhyath05/multitasking-assistant",
-      tags: ["Linux", "Ollama", "Python", "STT/TTS"]
-    },
-    {
-      name: "CuraMate: AI-Powered Doctor Portal",
-      desc: "A multimodal AI-powered doctor portal enabling medical triage, symptom clarification, and real-time prescription generation.",
-      gitHublink: "https://github.com/RamPrakhyath05/multitasking-assistant",
-      deploymentlink: "https://github.com/RamPrakhyath05/multitasking-assistant",
-      tags: ["Linux", "Ollama", "Python", "STT/TTS"]
+      name: "Homeserver",
+      desc: "A Personal File Server on a Local Network.",
+      gitHublink: "https://github.com/RamPrakhyath05/homeserver",
+      deploymentlink:
+        "https://github.com/RamPrakhyath05/multitasking-assistant",
+      tags: ["Java", "Spring Boot", "Maven", "Docker", "Watchtower", "EndeavourOS", "Linux"],
     },
     {
       name: "Mditor",
       desc: "A high-performance, real-time collaborative markdown editor featuring instant sync and live preview for distributed teams.",
-      gitHublink: "https://github.com/RamPrakhyath05/editor",
-      deploymentlink: "https://github.com/RamPrakhyath05/editor",
-      tags: ["WebSockets", "React", "Node.js", "Markdown"]
-    }
+      gitHublink: "https://github.com/RamPrakhyath05/Mditor",
+      deploymentlink: "https://github.com/RamPrakhyath05/Mditor",
+      tags: ["WebSockets", "React", "Node.js", "Markdown"],
+    },
   ];
 
   return (
@@ -56,8 +57,8 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group relative flex flex-col rounded-3xl bg-neutral-900/50 border border-white/5 p-8 transition-all duration-300 hover:bg-neutral-800/50 hover:border-white/10 hover:shadow-2xl hover:-translate-y-2"
             >
               <div className="flex justify-between items-start mb-6">
@@ -73,26 +74,29 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
                 {project.name}
               </h3>
-              
+
               <p className="text-neutral-400 leading-relaxed mb-6 flex-grow">
                 {project.desc}
               </p>
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.tags?.map((tag) => (
-                  <span key={tag} className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-white/5 border border-white/5 text-neutral-400">
+                  <span
+                    key={tag}
+                    className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-white/5 border border-white/5 text-neutral-400"
+                  >
                     {tag}
                   </span>
                 ))}
               </div>
 
               <div className="flex gap-4">
-                <Link 
+                <Link
                   href={project.gitHublink}
                   className="flex-1 text-center py-3 px-4 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-white/10 transition-colors"
                 >
                   Source
                 </Link>
-                <Link 
+                <Link
                   href={project.deploymentlink}
                   className="flex-1 text-center py-3 px-4 rounded-xl bg-primary text-neutral-950 text-sm font-bold hover:opacity-90 transition-opacity"
                 >

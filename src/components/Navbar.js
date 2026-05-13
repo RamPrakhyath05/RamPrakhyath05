@@ -2,90 +2,121 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaHome, FaProjectDiagram, FaFileAlt, FaHeart } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+
+const NAV_LINKS = [
+  { name: "Home", href: "/", icon: FaHome },
+  { name: "Projects", href: "/projects", icon: FaProjectDiagram },
+  { name: "Resume", href: "/RamPrakhyathA_Resume.pdf", icon: FaFileAlt, external: true },
+];
+
+const SOCIAL_LINKS = [
+  { href: "https://github.com/RamPrakhyath05", label: "GitHub", icon: FaGithub, color: "hover:text-[#8250DF]" },
+  { href: "https://in.linkedin.com/in/ram-prakhyath-annamreddy", label: "LinkedIn", icon: FaLinkedin, color: "hover:text-[#0A66C2]" },
+  { href: "https://instagram.com/ramprakhyath", label: "Instagram", icon: FaInstagram, color: "hover:text-[#C13584]" },
+];
+
+
 export default function Navbar() {
-  const pathname = usePathname();
-
-  const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Projects", href: "/projects" },
-    { name: "Resume", href: "/RamPrakhyathA_Resume.pdf", isExternal: true },
-  ];
-
   return (
-    <motion.nav 
-      initial={{ y: -100, x: "-50%", opacity: 0 }}
-      animate={{ y: 0, x: "-50%", opacity: 1 }}
-      transition={{ duration: 0.8, ease: "circOut" }}
-      className="fixed top-6 left-1/2 z-50"
+    <motion.nav
+      initial={{ y: -80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "circOut" }}
+      className="fixed top-6 left-1/2 z-50 -translate-x-1/2"
     >
-      <div className="relative flex items-center justify-between w-[95vw] max-w-4xl px-8 py-3 rounded-full bg-neutral-900/60 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)] overflow-hidden">
-        
-        <div className="absolute inset-0 bg-gradient-to-r from-white/[0.02] via-transparent to-white/[0.02] pointer-events-none" />
-
-        <div className="flex items-center gap-6 md:gap-8 z-10">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              target={link.isExternal ? "_blank" : undefined}
-              rel={link.isExternal ? "noopener noreferrer" : undefined}
-              className={`relative text-sm md:text-base font-medium transition-colors duration-300 ${
-                pathname === link.href ? "text-white" : "text-neutral-400 hover:text-white"
-              }`}
-            >
-              {link.name}
-              {pathname === link.href && (
-                <motion.div 
-                  layoutId="nav-underline"
-                  className="absolute -bottom-1 left-0 w-full h-0.5 bg-white shadow-[0_0_10px_rgba(255,255,255,0.5)]"
-                />
-              )}
-            </Link>
-          ))}
-        </div>
-
-        <div className="flex items-center gap-5 md:gap-7 z-10">
-          {/* Interests Icon */}
-          <NavIcon href="/interests" label="Interests">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 21s-6.7-4.35-9.33-7.97C.92 10.7 2.2 6.5 6.02 6.02 8.1 5.76 10 6.88 12 8.9c2-2.02 3.9-3.14 5.98-2.88 3.82.48 5.1 4.68 3.35 7.01-2.63 3.62-9.33 7.97-9.33 7.97z" />
-            </svg>
-          </NavIcon> {/* Fixed: Added the closing tag here */}
-
-          {/* Socials */}
-          <NavIcon href="https://github.com/RamPrakhyath05" label="GitHub" color="hover:text-[#8250DF]">
-            <FaGithub size={20} />
-          </NavIcon>
-
-          <NavIcon href="https://in.linkedin.com/in/ram-prakhyath-annamreddy" label="LinkedIn" color="hover:text-[#0A66C2]">
-            <FaLinkedin size={20} />
-          </NavIcon>
-
-          <NavIcon href="https://instagram.com/ramprakhyath" label="Instagram" color="hover:text-[#C13584]">
-            <FaInstagram size={20} />
-          </NavIcon>
-        </div>
+      <div className="flex items-center justify-between w-[95vw] max-w-4xl rounded-full border border-white/10 bg-neutral-900/70 px-5 py-3 backdrop-blur-xl shadow-xl">
+        <DesktopNav />
+        <MobileNav />
+        <SocialIcons />
       </div>
     </motion.nav>
   );
 }
 
-function NavIcon({ href, children, label, color = "hover:text-white" }) {
-  const isExternal = href.startsWith("http");
 
+function DesktopNav() {
+  const pathname = usePathname();
+
+  return (
+    <div className="hidden md:flex items-center gap-8">
+      {NAV_LINKS.map((link) => (
+        <Link
+          key={link.name}
+          href={link.href}
+          target={link.external ? "_blank" : undefined}
+          className={`relative text-sm font-medium transition-colors ${
+            pathname === link.href ? "text-white" : "text-neutral-400 hover:text-white"
+          }`}
+        >
+          {link.name}
+          {pathname === link.href && (
+            <motion.span
+              layoutId="nav-underline"
+              className="absolute -bottom-1 left-0 h-[2px] w-full bg-white"
+            />
+          )}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+
+function MobileNav() {
+  const pathname = usePathname();
+
+  return (
+    <div className="flex md:hidden items-center gap-6">
+      {NAV_LINKS.map((link) => {
+        const Icon = link.icon;
+        const isActive = pathname === link.href;
+
+        return (
+          <Link
+            key={link.name}
+            href={link.href}
+            target={link.external ? "_blank" : undefined}
+            aria-label={link.name}
+            className={`flex items-center justify-center rounded-full p-2 transition ${
+              isActive
+                ? "text-white bg-white/10"
+                : "text-neutral-400 hover:text-white hover:bg-white/5"
+            }`}
+          >
+            <Icon size={18} />
+          </Link>
+        );
+      })}
+    </div>
+  );
+}
+
+function SocialIcons() {
+  return (
+    <div className="flex items-center gap-4">
+      {SOCIAL_LINKS.map(({ href, label, icon: Icon, color }) => (
+        <NavIcon key={label} href={href} label={label} color={color}>
+          <Icon size={18} />
+        </NavIcon>
+      ))}
+    </div>
+  );
+}
+
+function NavIcon({ href, children, label, color = "hover:text-white" }) {
   return (
     <a
       href={href}
-      target={isExternal ? "_blank" : undefined}
-      rel={isExternal ? "noopener noreferrer" : undefined}
-      className={`relative group flex items-center text-neutral-400 transition-all duration-300 ${color} hover:scale-110`}
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label={label}
+      className={`group relative flex items-center text-neutral-400 transition-all duration-300 ${color} hover:scale-110`}
     >
       {children}
-      <span className="absolute -bottom-12 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-neutral-800 text-[10px] text-white opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 border border-white/5 pointer-events-none whitespace-nowrap z-50 shadow-xl">
+      <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 rounded bg-neutral-800 px-2 py-1 text-[10px] text-white opacity-0 transition group-hover:opacity-100">
         {label}
       </span>
     </a>
