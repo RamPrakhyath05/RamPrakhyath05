@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <main className="pt-32">
           {children}
         </main>
-        <Cursor /> {/* 👈 client-side cursor */}
+        <Cursor /> 
       </body>
     </html>
   );

@@ -50,8 +50,8 @@ export default function AboutAndExperience() {
 
               <div className="mt-6 space-y-4 text-base leading-relaxed text-neutral-400">
                 <p>
-                  I’m currently a third-year Computer Science Engineering student at PES University,
-                  with a strong interest in computer systems and core technologies.
+                  I’m currently a Final-year Computer Science Engineering student at PES University,
+                  with a strong interest in backend & cloud systems and core technologies.
                 </p>
                 <p>
                   I’m most interested in working on projects where performance, structure,

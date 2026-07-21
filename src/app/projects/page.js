@@ -24,15 +24,14 @@ export default function Home() {
       name: "Homeserver",
       desc: "A Personal File Server on a Local Network.",
       gitHublink: "https://github.com/RamPrakhyath05/homeserver",
-      deploymentlink:
-        "https://github.com/RamPrakhyath05/multitasking-assistant",
+      deploymentlink: "https://github.com/RamPrakhyath05/homeserver",
       tags: ["Java", "Spring Boot", "Maven", "Docker", "Watchtower", "EndeavourOS", "Linux"],
     },
     {
       name: "Mditor",
       desc: "A high-performance, real-time collaborative markdown editor featuring instant sync and live preview for distributed teams.",
       gitHublink: "https://github.com/RamPrakhyath05/Mditor",
-      deploymentlink: "https://github.com/RamPrakhyath05/Mditor",
+      deploymentlink: "https://mditor-nu.vercel.app",
       tags: ["WebSockets", "React", "Node.js", "Markdown"],
     },
   ];
@@ -99,6 +98,7 @@ export default function Home() {
                 <Link
                   href={project.deploymentlink}
                   className="flex-1 text-center py-3 px-4 rounded-xl bg-primary text-neutral-950 text-sm font-bold hover:opacity-90 transition-opacity"
+                  target="_blank"
                 >
                   Demo
                 </Link>
